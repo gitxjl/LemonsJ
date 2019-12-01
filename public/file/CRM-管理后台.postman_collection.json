@@ -1,0 +1,1511 @@
+{
+	"info": {
+		"_postman_id": "17514b29-1446-4fc0-a42e-fdd533423b99",
+		"name": "CRM-管理后台",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "操作记录",
+			"item": [
+				{
+					"name": "充值记录",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "897d5780-8854-49d2-8bf3-325a87d7f17b",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{token}}",
+								"description": "token"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": "Content-Type",
+								"type": "text"
+							},
+							{
+								"key": "TEst",
+								"value": "TEst",
+								"description": "TEst",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "POST1",
+									"value": "POST11",
+									"description": "POST11",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "POST2",
+									"value": "POST2",
+									"description": "POST2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/recharge/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&recharge_way=&type=&status=&from=&to=&agentcode=DL01359&username=良",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"recharge",
+								"list"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_SESSION_START",
+									"value": "1565744662580"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sn",
+									"value": ""
+								},
+								{
+									"key": "recharge_way",
+									"value": ""
+								},
+								{
+									"key": "type",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": ""
+								},
+								{
+									"key": "from",
+									"value": ""
+								},
+								{
+									"key": "to",
+									"value": ""
+								},
+								{
+									"key": "agentcode",
+									"value": "DL01359"
+								},
+								{
+									"key": "username",
+									"value": "良"
+								}
+							]
+						},
+						"description": "充值记录描述说明"
+					},
+					"response": [
+						{
+							"name": "充值记录",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}",
+										"description": "token"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": "Content-Type",
+										"type": "text"
+									},
+									{
+										"key": "TEst",
+										"value": "TEst",
+										"description": "TEst",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "POST1",
+											"value": "POST11",
+											"description": "POST11",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "POST2",
+											"value": "POST2",
+											"description": "POST2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "local.crmtest.com/api/recharge/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&recharge_way=&type=&status=&from=&to=&agentcode=DL01359&username=良",
+									"host": [
+										"local",
+										"crmtest",
+										"com"
+									],
+									"path": [
+										"api",
+										"recharge",
+										"list"
+									],
+									"query": [
+										{
+											"key": "XDEBUG_SESSION_START",
+											"value": "1565744662580"
+										},
+										{
+											"key": "per_page",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sn",
+											"value": ""
+										},
+										{
+											"key": "recharge_way",
+											"value": ""
+										},
+										{
+											"key": "type",
+											"value": ""
+										},
+										{
+											"key": "status",
+											"value": ""
+										},
+										{
+											"key": "from",
+											"value": ""
+										},
+										{
+											"key": "to",
+											"value": ""
+										},
+										{
+											"key": "agentcode",
+											"value": "DL01359"
+										},
+										{
+											"key": "username",
+											"value": "良"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Bdpagetype",
+									"value": "1"
+								},
+								{
+									"key": "Bdqid",
+									"value": "0xb56e14b10006307d"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html"
+								},
+								{
+									"key": "Cxy_all",
+									"value": "06074089_18_pg+33c25b382671d43138ed5b85ee0ab538"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 30 Nov 2019 09:52:24 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Sat, 30 Nov 2019 09:51:39 GMT"
+								},
+								{
+									"key": "P3p",
+									"value": "CP=\" OTI DSP COR IVA OUR IND COM \""
+								},
+								{
+									"key": "Server",
+									"value": "BWS/1.1"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "BDRCVFR[LyOqhVrki83]=3rYZBLOTDb6nHDvILC8mvqV; path=/; domain=.baidu.com"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "delPer=0; path=/; domain=.baidu.com"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "BDSVRTM=0; path=/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "BD_HOME=0; path=/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "H_PS_PSSID=1451_21114; path=/; domain=.baidu.com"
+								},
+								{
+									"key": "Traceid",
+									"value": "1575107544028805991413073409518745301117"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Ua-Compatible",
+									"value": "IE=Edge,chrome=1"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n  \"me\": {\r\n    \"name\": \"Luke Skywalker\"\r\n  }\r\n}"
+						},
+						{
+							"name": "充值记录fsdf",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}",
+										"description": "token"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"description": "Content-Type",
+										"type": "text"
+									},
+									{
+										"key": "TEst",
+										"value": "TEst",
+										"description": "TEst",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "POST1",
+											"value": "POST11",
+											"description": "POST11",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "POST2",
+											"value": "POST2",
+											"description": "POST2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/recharge/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&recharge_way=&type=&status=&from=&to=",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"recharge",
+										"list"
+									],
+									"query": [
+										{
+											"key": "XDEBUG_SESSION_START",
+											"value": "1565744662580"
+										},
+										{
+											"key": "per_page",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sn",
+											"value": ""
+										},
+										{
+											"key": "recharge_way",
+											"value": ""
+										},
+										{
+											"key": "type",
+											"value": ""
+										},
+										{
+											"key": "status",
+											"value": ""
+										},
+										{
+											"key": "from",
+											"value": ""
+										},
+										{
+											"key": "to",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Bdpagetype",
+									"value": "1"
+								},
+								{
+									"key": "Bdqid",
+									"value": "0xb56e14b10006307d"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "private"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html"
+								},
+								{
+									"key": "Cxy_all",
+									"value": "06074089_18_pg+33c25b382671d43138ed5b85ee0ab538"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 30 Nov 2019 09:52:24 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "Sat, 30 Nov 2019 09:51:39 GMT"
+								},
+								{
+									"key": "P3p",
+									"value": "CP=\" OTI DSP COR IVA OUR IND COM \""
+								},
+								{
+									"key": "Server",
+									"value": "BWS/1.1"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "BDRCVFR[LyOqhVrki83]=3rYZBLOTDb6nHDvILC8mvqV; path=/; domain=.baidu.com"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "delPer=0; path=/; domain=.baidu.com"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "BDSVRTM=0; path=/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "BD_HOME=0; path=/"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "H_PS_PSSID=1451_21114; path=/; domain=.baidu.com"
+								},
+								{
+									"key": "Traceid",
+									"value": "1575107544028805991413073409518745301117"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Ua-Compatible",
+									"value": "IE=Edge,chrome=1"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n  \"me\": {\r\n    \"name\": \"充值记录fsdf\"\r\n  }\r\n}"
+						}
+					]
+				},
+				{
+					"name": "消费记录",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0429da6a-0436-4bf7-8372-9aa85a60fd73",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/consume/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sns&charge_source=&from=&to=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"consume",
+								"list"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_SESSION_START",
+									"value": "1565744662580"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sns",
+									"value": null,
+									"description": "订单编号"
+								},
+								{
+									"key": "charge_source",
+									"value": "",
+									"description": "扣款方式 0 => '--',\n        1 => '软件扣款',\n        2 => '硬件扣款',\n        3 => '保证金扣款',\n        4 => '考勤卡扣款',\n        5 => '信用扣款'"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"description": "创建开始日期"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"description": "创建结束日期"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "消费记录",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/sale/history/consume/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&school_name=&charge_source=&status=&type=&from=&to=&agentcode=DL01359&username=良",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"sale",
+										"history",
+										"consume",
+										"list"
+									],
+									"query": [
+										{
+											"key": "XDEBUG_SESSION_START",
+											"value": "1565744662580"
+										},
+										{
+											"key": "per_page",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "sn",
+											"value": "",
+											"description": "订单编号"
+										},
+										{
+											"key": "school_name",
+											"value": "",
+											"description": "学校名称"
+										},
+										{
+											"key": "charge_source",
+											"value": "",
+											"description": "扣款方式 0 => '--',\n        1 => '软件扣款',\n        2 => '硬件扣款',\n        3 => '保证金扣款',\n        4 => '考勤卡扣款',\n        5 => '信用扣款'"
+										},
+										{
+											"key": "status",
+											"value": "",
+											"description": "订单状态  -1 => array('status' => '已作废'),\n        0 => array('status' => '待运营确认', 'role' => 4),\n        1 => array('status' => '待总监审核', 'role' => 2),\n        2 => array('status' => '待财务审核', 'role' => 5),\n        3 => array('status' => '订单完成', 'role' => 1),\n        5 => array('status' => '异常的未生效订单', 'role' => 6),\n        8 => array('status' => '等待代理商确认', 'role' => 6),"
+										},
+										{
+											"key": "type",
+											"value": "",
+											"description": "订单类型 1 => array(\n            'name' => '考勤卡订单',\n            'type' => '硬件',\n            'typeId' => 1\n        ),\n        2 => array(\n            'name' => '视频用户订单',\n            'type' => '软件',\n            'typeId' => 2\n        ),\n        3 => array(\n            'name' => '产品试用订单',\n            'type' => '产品试用订单',\n            'typeId' => 3\n        ),\n        4 => array(\n            'name' => '监控设备订单',\n            'type' => '监控设备订单',\n            'typeId' => 4\n        ),\n        /*5 => array(\n            'name' => '开通服务订单',\n            'type' => '转换金额类型订单',\n            'typeId' => 5\n            ),*/\n        /*6 => array(\n            'name' => '产品暑假试用订单',\n            'type' => '产品暑假试用订单',\n            'typeId' => 6\n            ),*/\n        7 => array(\n            'name' => '监控设备(信用)订单',\n            'type' => '监控设备(信用)订单',\n            'typeId' => 7\n        ),\n        8 => array(\n            'name' => '扣软件款订单',\n            'type' => '扣软件款订单',\n            'typeId' => 8\n        ),\n        9 => array(\n            'name' => '短信订单',\n            'type' => '短信订单',\n            'typeId' => 9\n        ),\n        10 => array(\n            'name' => '活动违约订单',\n            'type' => '活动违约订单',\n            'typeId' => 10\n        ),\n        11 => array(\n            'name' => '信用还款扣硬件',\n            'type' => '信用还款扣硬件',\n            'typeId' => 11\n        ),\n        12 => array(\n            'name' => '信用还款扣保证金',\n            'type' => '信用还款扣保证金',\n            'typeId' => 12\n        )"
+										},
+										{
+											"key": "from",
+											"value": "",
+											"description": "创建开始日期"
+										},
+										{
+											"key": "to",
+											"value": "",
+											"description": "创建结束日期"
+										},
+										{
+											"key": "agentcode",
+											"value": "DL01359",
+											"description": "代理商ID"
+										},
+										{
+											"key": "username",
+											"value": "良",
+											"description": "代理商名称"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "服务单",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c9f7ad15-44cb-4cbf-8d60-93ec24d681fb",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "x-www1",
+									"value": "x-www1",
+									"description": "x-www1",
+									"type": "text"
+								},
+								{
+									"key": "x-www2",
+									"value": "x-www2",
+									"description": "x-www2",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/profit/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&type=&charge=1&pay_way&agentcode=DL00350&username=络",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"profit",
+								"list"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_SESSION_START",
+									"value": "1565744662580"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sn",
+									"value": "",
+									"description": "订单"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"description": "类型"
+								},
+								{
+									"key": "charge",
+									"value": "1",
+									"description": "收费类型  1 => '收费',\n            2 => '收费'"
+								},
+								{
+									"key": "pay_way",
+									"value": null,
+									"description": "支付方式 1 => '支付宝',\n            2 => '微信'"
+								},
+								{
+									"key": "agentcode",
+									"value": "DL00350",
+									"description": "ID"
+								},
+								{
+									"key": "username",
+									"value": "络",
+									"description": "名称"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "提现订单",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "16a59bfd-619c-4861-aeed-82c1d534421b",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"raw\": \"001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/withdraw/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&snsdf&status=&from=&to=&customername=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"withdraw",
+								"list"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_SESSION_START",
+									"value": "1565744662580"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "snsdf",
+									"value": null
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "订单状态 -1 => '已作废',\n        0 => '待审核',\n        1 => '已完成'"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"description": "创建开始时间"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"description": "创建结束时间"
+								},
+								{
+									"key": "customername",
+									"value": "",
+									"description": "名称"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "退货款单",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ff67e174-352d-4753-8807-f8e4d1c2c70f",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "COPY",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {
+								"src": ""
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/return/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&status=&from=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"return",
+								"list"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_SESSION_START",
+									"value": "1565744662580"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sn",
+									"value": "",
+									"description": "订单编号"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "订单状态 -1 => '作废',\n        0 => '待提交审核',\n        1 => '运营专员审核',\n        2 => '驳回',\n"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"description": "开始时间"
+								},
+								{
+									"key": "customername",
+									"value": "电",
+									"description": "代理商名称",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "调账单",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "68635788-e10e-411e-8f7d-3e11513183fd",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "OPTIONS",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "{\r\n  \"me\": {\r\n    \"name\": \"Luke Skywalker\"\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/history/adjust/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&agentcode=DL00482&customername=有限公司&sn=&status=&district=35",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"history",
+								"adjust",
+								"list"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_SESSION_START",
+									"value": "1565744662580"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "agentcode",
+									"value": "DL00482",
+									"description": "ID"
+								},
+								{
+									"key": "customername",
+									"value": "有限公司",
+									"description": "名称"
+								},
+								{
+									"key": "sn",
+									"value": "",
+									"description": "订单编号"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "订单状态 -1 => array(\n            'status' => '已作废',\n            'role_id' => -1, // 没有人可以审核\n        ),\n        0 => array(\n            'status' => '等待运营提交',\n            'role_id' => 4,\n        ),\n        1 => array(\n            'status' => '等待总监审核',\n            'role_id' => 2,\n        )"
+								},
+								{
+									"key": "district",
+									"value": "35",
+									"description": "所属区域 通过区域接口获取"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "活动还款 / 违约",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6f0c99d9-23e7-40c3-a203-e8724b175fed",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/repayment/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&agentcode&username&order_id&status=&from&to",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"repayment",
+								"list"
+							],
+							"query": [
+								{
+									"key": "XDEBUG_SESSION_START",
+									"value": "1565744662580"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "agentcode",
+									"value": null,
+									"description": "ID"
+								},
+								{
+									"key": "username",
+									"value": null,
+									"description": "名称"
+								},
+								{
+									"key": "order_id",
+									"value": null,
+									"description": "编号"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "审核状态 0 => '待审核',\n        1 => '待审核',\n        2 => '完成'"
+								},
+								{
+									"key": "from",
+									"value": null,
+									"description": "开始日期"
+								},
+								{
+									"key": "to",
+									"value": null,
+									"description": "结束日期"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2c410313-f30b-4047-b9a8-a0255c00ff4f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f220eb20-898f-4e12-92a9-03eef2b9798c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "财务管理",
+			"item": [
+				{
+					"name": "财务",
+					"item": [
+						{
+							"name": "发票发票",
+							"item": [
+								{
+									"name": "报税报税",
+									"item": [
+										{
+											"name": "报税报税",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer {{token}}"
+													},
+													{
+														"key": "Content-Type",
+														"name": "Content-Type",
+														"value": "application/x-www-form-urlencoded",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "graphql",
+													"graphql": {
+														"query": "",
+														"variables": ""
+													}
+												},
+												"url": {
+													"raw": "{{url}}/account/list?per_page=10&page=1",
+													"host": [
+														"{{url}}"
+													],
+													"path": [
+														"account",
+														"list"
+													],
+													"query": [
+														{
+															"key": "per_page",
+															"value": "10"
+														},
+														{
+															"key": "page",
+															"value": "1"
+														},
+														{
+															"key": "total",
+															"value": "438",
+															"disabled": true
+														},
+														{
+															"key": "agent_code",
+															"value": "",
+															"disabled": true
+														},
+														{
+															"key": "agent_name",
+															"value": "",
+															"disabled": true
+														},
+														{
+															"key": "from",
+															"value": "",
+															"disabled": true
+														},
+														{
+															"key": "to",
+															"value": "",
+															"disabled": true
+														}
+													]
+												}
+											},
+											"response": []
+										}
+									],
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"id": "213eb5ce-70c0-4240-8636-1b98d5bd7ab2",
+												"type": "text/javascript",
+												"exec": [
+													""
+												]
+											}
+										},
+										{
+											"listen": "test",
+											"script": {
+												"id": "41582bbd-504e-4a36-9bd8-2d50f94456d1",
+												"type": "text/javascript",
+												"exec": [
+													""
+												]
+											}
+										}
+									],
+									"protocolProfileBehavior": {},
+									"_postman_isSubFolder": true
+								},
+								{
+									"name": "发票发票列",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "graphql",
+											"graphql": {
+												"query": "",
+												"variables": ""
+											}
+										},
+										"url": {
+											"raw": "{{url}}/account/list?per_page=10&page=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"account",
+												"list"
+											],
+											"query": [
+												{
+													"key": "per_page",
+													"value": "10"
+												},
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "total",
+													"value": "438",
+													"disabled": true
+												},
+												{
+													"key": "agent_code",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "agent_name",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "from",
+													"value": "",
+													"disabled": true
+												},
+												{
+													"key": "to",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "财务列",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "{{url}}/account/list?per_page=10&page=1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"account",
+										"list"
+									],
+									"query": [
+										{
+											"key": "per_page",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "total",
+											"value": "438",
+											"disabled": true
+										},
+										{
+											"key": "agent_code",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "agent_name",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e0f99cb3-b957-4785-90dd-244b1d84712f",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "827bde6c-a0e3-40be-987d-e6621cb6c717",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "登录",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d02c5991-2779-475d-b5c5-dd3cba97f011",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"\r",
+							"postman.setEnvironmentVariable(\"token\", jsonData.data.token);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"admin\",\r\n    \"password\": \"1111\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5710fff4-7983-449e-b6af-8442adf250cb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a300f729-3803-4e3b-8aab-5a2252246cca",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
