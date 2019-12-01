@@ -1,9 +1,9 @@
 # PostMan & ApiDoc 
 基于 Laravel6 对 PostMan->Collections 导出的接口数据生成接口文档，避免重复工作
 
-手动操作
-生成地址：
+手动操作：
 
+    生成地址：
     local.apidoc.com/api/create/CRM-管理后台.postman_collection.json
 
     访问Api Doc 地址：
