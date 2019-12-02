@@ -14,4 +14,4 @@
     输出json格式
 
 
-![img01](/public/file/20191201233950.png)
+![img01](/public/apiDocAssets/img/20191201233950.png)
