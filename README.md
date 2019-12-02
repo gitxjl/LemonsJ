@@ -12,3 +12,6 @@
     访问Moke地址：
     http://local.apidoc.com/apiDoc/CRM-管理后台/api/recharge/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&recharge_way=&type=&status=&from=&to=&agentcode=DL01359&username=良
     输出json格式
+
+
+![img01](/public/file/20191201233950.png)
