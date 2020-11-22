@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>item</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/icon/icon.css">
+    <link rel="stylesheet" href="../assets/css/item.css">
+</head>
+<body>
+<div class="item-box">
+    <ul>
+        <li class="active" p="">所有项目</li>
+        <li p="0">创建的项目</li>
+        <li p="1,2">加入的项目</li>
+        <li class="right"><i class="bi bi-list"></i><i class="bi bi-view-list active"></i></li>
+    </ul>
+    <div class="item-view">
+        <div class="list item-new">
+            <div onclick="itemEdit(this)">PROJ<i class="bi bi-item-plus"></i></div>
+            <div onclick="uploadFiles(this)">JSON<i class="bi bi-postman"></i></div>
+        </div>
+    </div>
+    <div class="paginate">
+    </div>
+</div>
+<script src="../assets/js/jquery-3.5.0.min.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/item.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>team</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/icon/icon.css">
+    <link rel="stylesheet" href="../assets/css/doc-edit.css">
+    <link rel="stylesheet" href="../assets/css/doc-table.css">
+    <link rel="stylesheet" href="../assets/css/doc-team.css">
+</head>
+<body>
+<div>
+    <form id="doc-create" method="POST" action="" enctype="multipart/form-data">
+        <input name="tid" type="hidden" value="">
+        <div class="row">
+            <div><span class="row-title">团队管理</span></div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>
+                <div class="button-option">
+                    <button class="button" type="submit">保存</button>
+                    <div class="option">
+                        <span class="caret"></span>
+                        <ul>
+                            <li class="is_tdl">另存为模板</li>
+                            <li class="is_tdl">取消模板并保存</li>
+                            <li>另存为模板</li>
+                            <li>另存为模板</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doc-table-box parameter">
+            <div class="doc-table">
+                <div class="header">
+                    <div class="title">创新项目团队</div>
+                    <div class="else-right">2020-06-29 16:32:23</div>
+                    <div class="else-right"><i class="bi bi-item" title="项目"></i> 34</div>
+                    <div class="else-right"><i class="bi bi-people" title="成员"></i> 12</div>
+                </div>
+                <ul class="doc-table-ul ui-sortable">
+                    <li>
+                        <i class="bi bi-up-downs li-sort" title="排序"></i>
+                        <input class="mandatory" type="checkbox" checked title="启用/停用">
+                        <input class="key" name="name" type="text" value="用户名001" readonly="readonly">
+                        <input class="key" name="email" type="text" value="admin@admin.com" readonly="readonly">
+                        <i class="bi bi-edit" title="编辑"></i><i class="bi bi-x" title="删除"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="../assets/js/jquery-3.5.0.min.js"></script>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<!--<script src="../assets/js/table.js"></script>-->
+<!--<script src="../assets/js/form.js"></script>-->
+
+<!--<script type="text/javascript">-->
+
+    <!--set_doc_table_data('');-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg class="bi bi-download" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="m5,7.5a0.5,0.5 0 0 1 0.707,0l2.293,2.293l2.293,-2.293a0.5,0.5 0 1 1 0.707,0.707l-2.646,2.647a0.5,0.5 0 0 1 -0.708,0l-2.646,-2.647a0.5,0.5 0 0 1 0,-0.707z" clip-rule="evenodd" id="svg_2"/>
+  <path fill-rule="evenodd" d="m8,1a0.5,0.5 0 0 1 0.5,0.5l0,8a0.5,0.5 0 0 1 -1,0l0,-8a0.5,0.5 0 0 1 0.5,-0.5z" clip-rule="evenodd" id="svg_3"/>
+  <path fill="black" id="svg_1" clip-rule="evenodd" d="m1,13.39002a0.5,0.5 0 0 1 0.5,-0.5l13,0a0.5,0.5 0 0 1 0,1l-13,0a0.5,0.5 0 0 1 -0.5,-0.5z" fill-rule="evenodd"/>
+</svg>

@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,10 +12,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('apiDoc.index');
+Route::get('/', function (){
+    return view()->file(public_path().'/index.html');
 });
-Route::get('/api/create/{apiName}', 'ApiDocController@index');
-Route::get('/api/mock/{apiName}/{slashName?}', 'ApiDocController@mock')
-    ->where('slashName', '(.*)');
+Route::group(['prefix'=>'verify','namespace' => 'V1'],function(){
+    Route::get('/changed{token}', function ($token){
+        return abort(210,$token);
+    });
+    Route::post('/changed', 'UserController@changed');
+    Route::get('{token}', 'UserController@verify');
+});
+
+Route::get('download/{file}',function($file){
+    return response()->download(realpath(base_path('public')).'/export/'.$file, $file);
+});

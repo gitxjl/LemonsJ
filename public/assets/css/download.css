@@ -1,0 +1,99 @@
+#download {
+    width: 600px;
+    margin: 0 auto;
+}
+.download-box {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.download-box.download-hidden {
+    top: 20%;
+}
+.download-box.download-hidden .d-header > .b-but > label > input {
+    margin-top: -2px;
+}
+
+
+.d-header {
+    height: 31px;
+    line-height: 31px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.d-header > .combobox {
+    width: 150px;
+}
+
+.d-header > .combobox.down-item-cut {
+    width: 200px;
+}
+
+.d-header > .b-but {
+    float: right
+}
+
+.d-header > .b-but > label > input {
+    vertical-align: middle;
+    margin-right: 1px;
+}
+
+.d-header > .combobox, .d-header > span {
+    float: left;
+}
+
+.d-header > span {
+    width: 80px;
+    text-align: center;
+}
+
+.search-box > label {
+    white-space: nowrap;
+    line-height: 25px;
+    margin-right: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.search-box > label > input {
+    vertical-align: middle;
+    margin-right: 1px;
+    margin-top: -3.5px;
+}
+
+.input-box .value .bi {
+    background-position: 0px 0px !important;
+    margin-right: 1px;
+}
+
+.input-box > .title, .input-box > .value {
+    line-height: 15px;
+}
+
+.combobox-dl dl dd input {
+    width: 20px;
+    float: right;
+    margin-top: 9px;
+    margin-right: 16px;
+}
+.combobox-menu, .dialog-ul-box {
+    height: 300px;
+}
+.download-box>.search-box{
+    display: none;
+    box-shadow: 0px 2px 12px -11px #000;
+    border:0px;
+    margin-bottom:5px;
+}
+.download-box>.combobox-menu{
+    display: none;
+}
+.combobox .input-box .bi.repeat {
+    height: 20px;
+}

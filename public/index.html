@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LemonsJ-Doc</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/doc.css">
+    <link rel="stylesheet" href="assets/icon/icon.css">
+    <script src="assets/js/init.js"></script>
+</head>
+<body>
+<div id="split"><i class="bi bi-drag"></i></div>
+<div id="sidebar">
+    <div class="combobox item-cut">
+        <div class="input-box">
+            <div class="value">
+                <span onclick="itemEdit(this)"><i class="bi bi-item-plus"></i><a href="javascript:;">新建项目</a></span>
+            </div>
+            <i class="bi repeat" title="切换项目"></i>
+        </div>
+        <div class="combobox-box">
+            <div class="search-box">
+                <input type="text" class="search" value="" placeholder="搜索 / Search"/>
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="combobox-menu">
+                <div class="combobox-dl"></div>
+            </div>
+        </div>
+    </div>
+    <div class="search-box">
+        <input type="text" class="search" value="" placeholder="搜索 / Search"/>
+        <i class="bi bi-search"></i>
+    </div>
+    <div class="combobox-fn">
+        <i class="doc-con user-edit">
+            <img class="icon" src="assets/face/00.jpg"/>
+            <ul>
+                <li onclick="edit()"><i class="bi bi-edit"></i><span class="name">编辑资料</span></li>
+                <li onclick="link(this,'login.html',0,'login')"><i class="bi bi-controller"></i>换号/注册</li>
+                <li onclick="quit()"><i class="bi bi-power"></i>退出</li>
+            </ul>
+        </i>
+        <i class="bi bi-chevron-expand sToggle" title="折叠/展开"></i>
+
+        <i class="bi bi-plus doc-con" d=".combobox-new">
+            <ul>
+                <li onclick="link(this,'table.html',1)"><i class="bi bi-grid"></i>表格文档</li>
+                <li onclick="link(this,'markdown.html',1)"><i class="bi bi-markdown"></i>Markdown</li>
+                <li onclick="link(this,'html.html',1)"><i class="bi bi-code"></i>富文本</li>
+                <li onclick="link(this,'curl.html',1)"><i class="bi bi-curl"></i><u>c</u>URL</li>
+                <li onclick="catalogsEdit(this)"><i class="bi bi-catalogs-plus"></i>新建目录</li>
+                <li onclick="catalogsSort(this)"><i class="bi bi-up-downs"></i>目录排序</li>
+                <li onclick="itemEdit(this)"><i class="bi bi-item-plus"></i>新建项目</li>
+                <li onclick="uploadFile(this)"><i class="bi bi-upload"></i>导入文件</li>
+            </ul>
+        </i>
+        <i class="bi bi-dots doc-con">
+            <ul class="floating-menu">
+                <li class="but-pattern" title="切换至浏览模式"><i class="bi bi-eye"></i><span>浏览模式</span></li>
+                <li>
+                    <a><i class="bi bi-plus"></i>新建<span class="caret-r"></span></a>
+                    <ul>
+                        <li onclick="link(this,'table.html',1)"><i class="bi bi-grid"></i>表格文档</li>
+                        <li onclick="link(this,'markdown.html',1)"><i class="bi bi-markdown"></i>Markdown</li>
+                        <li onclick="link(this,'html.html',1)"><i class="bi bi-code"></i>富文本</li>
+                        <li onclick="link(this,'curl.html',1)"><i class="bi bi-curl"></i><u>c</u>URL</li>
+                        <li onclick="catalogsEdit(this)"><i class="bi bi-catalogs-plus"></i>新建目录</li>
+                        <li onclick="catalogsSort(this)"><i class="bi bi-up-downs"></i>目录排序</li>
+                        <li onclick="itemEdit(this)"><i class="bi bi-item-plus"></i>新建项目</li>
+                    </ul>
+                </li>
+                <li role="presentation">
+                    <a href="#" data-hover="dropdown"><i class="bi bi-upload"></i>导入<span class="caret-r"></span></a>
+                    <ul class="dropdown-menu-s">
+                        <li onclick="uploadFile(this,4)"><i class="bi bi-postman"></i>PostMan</li>
+                        <li onclick="uploadFile(this,5)"><i class="bi bi-swagger"></i>Swagger 2</li>
+                        <li><i class="bi bi-open-api"></i>OpenApi 3(待开发)</li>
+                        <li><i class="bi bi-yaml"></i>yaml(待开发)</li>
+                        <li><i class="bi bi-"></i>har 1.2(待开发)</li>
+                    </ul>
+                </li>
+                <li onclick="link(this,'download.html',1,'item-download')">
+                    <i class="bi bi-download"></i>导出
+                </li>
+                <li class="special fun copy-doc" c="1"><i class="bi bi-clone"></i>复制文档</li>
+                <li class="special fun del-doc" c="2"><i class="bi bi-x"></i>删除</li>
+                <li class="special fun share-doc" c="3"><i class="bi bi-link"></i>分享连接</li>
+                <li class="special fun new-window dropdown-divider" c="4"><i class="bi bi-cursor"></i>新窗口打开</li>
+                <li><a><i class="bi bi-item"></i>项目管理<span class="caret-r"></span></a>
+                    <ul class="dropdown-menu-s">
+                        <li onclick="link(this,'item/member.html',1,'item-m')">
+                            <i class="bi bi-person-bounding-box"></i>成员管理
+                        </li>
+                        <li onclick="itemEdit(this,-1)">
+                            <i class="bi bi-item-edit"></i>编辑项目
+                        </li>
+                        <li onclick="itemEdit(this)">
+                            <i class="bi bi-item-plus"></i>新建项目
+                        </li>
+                        <li onclick="link(this,'item/index.html',0,'item-list',true)">
+                            <i class="bi bi-item"></i>所有项目
+                        </li>
+                        <li onclick="link(this,'item/index.html?p=0',0,'item-list',true)">
+                            <i class="bi bi-person-lines-fill"></i>我创建的项目
+                        </li>
+                        <li onclick="link(this,'item/index.html?p=1,2',0,'item-list',true)">
+                            <i class="bi bi-person-square"></i>加入的项目
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-divider" onclick="link(this,'team/index.html',0,'team-m')">
+                    <i class="bi bi-people"></i>团队管理
+                </li>
+                <li>
+                    <a><i class="bi bi-star"></i>更多<span class="caret-r"></span></a>
+                    <ul>
+                        <li onclick="storageClear()"><i class="bi bi-refresh"></i>清除所有本地缓存</li>
+                        <li onclick="link(this,'qaq/document.html')"><i class="bi bi-question"></i>功能说明</li>
+                        <li onclick="link(this,'qaq/about.html')"><i class="bi bi-developer"></i>关于Lemon.com</li>
+                    </ul>
+                </li>
+                <li onclick="quit()">
+                    <i class="bi bi-power"></i>退出
+                </li>
+            </ul>
+        </i>
+    </div>
+    <div class="combobox-menu sidebar-menu">
+        <div class="combobox-dl">
+            <dl class="combobox-new">
+                <dd onclick="link(this,'table.html',1)">
+                    <div><i class="bi bi-plus"></i>表格文档</div>
+                </dd>
+                <dd onclick="link(this,'markdown.html',1)">
+                    <div><i class="bi bi-markdown"></i>Markdown</div>
+                </dd>
+                <dd onclick="link(this,'html.html',1)">
+                    <div><i class="bi bi-code"></i>富文本文档</div>
+                </dd>
+                <dd onclick="link(this,'curl.html',1)">
+                    <div><i class="bi bi-curl"></i><u>c</u>URL</div>
+                </dd>
+                <dd onclick="catalogsEdit(this)">
+                    <div><i class="bi bi-catalogs-plus"></i>新建目录</div>
+                </dd>
+                <dd onclick="catalogsSort(this)">
+                    <div><i class="bi bi-up-downs"></i>目录排序</div>
+                </dd>
+                <dd onclick="itemEdit(this)">
+                    <div><i class="bi bi-item-plus"></i>新建项目</div>
+                </dd>
+                <dd onclick="uploadFile(this)">
+                    <div><i class="bi bi-upload"></i>导入文件</div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="combobox-d">
+        <i class="bi back_keys" title="上一篇" onclick="pager(-1)"></i><i class="bi forward_keys" title="下一篇" onclick="pager()"></i>
+    </div>
+</div>
+<div id="container">
+    <div class="off-on">
+        <i class="bi bi-off sidebar-mode ondblclick" title="隐藏侧导航"></i>
+    </div>
+    <div class="tab-box">
+        <div class="tab" style="display: none">
+            <div class="tab-fn">
+                <i class="bi bi-left scroll" d="0" s="true" style="display: none"></i>
+            </div>
+            <div class="tab-nav">
+                <ul></ul>
+            </div>
+            <div class="tab-fn" style="float: right">
+                <i class="bi bi-right scroll" d="1" style="display: none"></i>
+                <i class="bi bi-down">
+                    <ul class="tab-menu">
+                        <li class="but-tab-close tab-special refresh">刷新</li>
+                        <li class="tab-special but-tab-close close-right">关闭右侧页面</li>
+                        <li class="tab-special but-tab-close close-left">关闭左侧页面</li>
+                        <li class="tab-special but-tab-close close-else">关闭其他页面</li>
+                        <li class="but-tab-close resume-last ">恢复上一个关闭的页面</li>
+                    </ul>
+                </i>
+                <i class="bi bi-box-arrow-in-up bi-box-arrow-in-down close" title="关闭顶导航"></i>
+            </div>
+        </div>
+    </div>
+    <div class="iframes">
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery-3.5.0.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/doc.js"></script>
+</html>

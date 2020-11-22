@@ -2,10 +2,7 @@
 
 namespace App\Providers;
 
-use DB;
-use Log;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,15 +23,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //将执行的sql写到日志中
-        DB::listen(function ($query) {
-            $sql = str_replace('?', '"' . '%s' . '"', $query->sql);
-            $sql = vsprintf($sql, $query->bindings);
-            $sql = str_replace("\\", "", $sql);
-            $tmp = "SQL语句执行：{$sql}，耗时：{$query->time}ms" . "\n\t";
-            Log::channel('sql')->info($tmp);
+        //驱动
+        app('Dingo\Api\Auth\Auth')->extend('jwt', function ($app) {
+            return new \Dingo\Api\Auth\Provider\JWT($app['Tymon\JWTAuth\JWTAuth']);
         });
-        Schema::defaultStringLength(191);
-
+        //转默认异常渲染
+        app('api.exception')->register(function (\Exception $exception) {
+            $request = \Illuminate\Http\Request::capture();
+            return app('App\Exceptions\Handler')->render($request, $exception);
+        });
     }
 }

@@ -1,5 +1,9 @@
 <?php
 
+use Monolog\Handler\NullHandler;
+use Monolog\Handler\StreamHandler;
+use Monolog\Handler\SyslogUdpHandler;
+
 return [
 
     /*
@@ -25,36 +29,16 @@ return [
     | you a variety of powerful log handlers / formatters to utilize.
     |
     | Available Drivers: "single", "daily", "slack", "syslog",
-    |                    "errorlog", "custom", "stack"
+    |                    "errorlog", "monolog",
+    |                    "custom", "stack"
     |
     */
 
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'name' => env('APP_ENV'),
-            'channels' => ['error'],
-        ],
-
-        'slack' => [
-            'driver' => 'slack',
-            'url' => env('APP_URL'),
-            'username' => 'crm log',
-            'emoji' => ':boom:',
-            'level' => 'critical',
-        ],
-
-        'daily' => [
-            'driver' => 'daily',
-            'path' => storage_path('logs/daily.log'),
-            'level' => 'debug',
-            'days' => 7,
-        ],
-
-        'syslog' => [
-            'driver' => 'syslog',
-            'path' => storage_path('logs/syslog.log'),
-            'level' => 'debug',
+            'channels' => ['single'],
+            'ignore_exceptions' => false,
         ],
 
         'single' => [
@@ -63,67 +47,58 @@ return [
             'level' => 'debug',
         ],
 
-        'error' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/error/' . Date('Ym') . '.log'),
+        'daily' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/laravel.log'),
+            'level' => 'debug',
+            'days' => 14,
+        ],
+
+        'slack' => [
+            'driver' => 'slack',
+            'url' => env('LOG_SLACK_WEBHOOK_URL'),
+            'username' => 'Laravel Log',
+            'emoji' => ':boom:',
+            'level' => 'critical',
+        ],
+
+        'papertrail' => [
+            'driver' => 'monolog',
+            'level' => 'debug',
+            'handler' => SyslogUdpHandler::class,
+            'handler_with' => [
+                'host' => env('PAPERTRAIL_URL'),
+                'port' => env('PAPERTRAIL_PORT'),
+            ],
+        ],
+
+        'stderr' => [
+            'driver' => 'monolog',
+            'handler' => StreamHandler::class,
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+            'with' => [
+                'stream' => 'php://stderr',
+            ],
+        ],
+
+        'syslog' => [
+            'driver' => 'syslog',
             'level' => 'debug',
         ],
 
-        'sql' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/sql/' . Date('Ymd') . '.log'),
+        'errorlog' => [
+            'driver' => 'errorlog',
             'level' => 'debug',
         ],
 
-        // 脚本与业务，相关日志
-        'script' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/script/' . Date('Ym') . '.log'),
-            'level' => 'debug',
+        'null' => [
+            'driver' => 'monolog',
+            'handler' => NullHandler::class,
         ],
 
-        // 定时任务日志
-        'cron_task' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/cron_task/' . Date('Ymd') . '.log'),
-            'level' => 'debug',
+        'emergency' => [
+            'path' => storage_path('logs/laravel.log'),
         ],
-
-        // 代理商和掌心宝贝利润分账日志（视频服务费和信息服务费）
-        'profit_task' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/profit_task/' . Date('Ym') . '.log'),
-            'level' => 'debug',
-        ],
-
-        // 报备幼儿园日志（转正、过期）
-        'declared_task' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/declared_task/' . Date('Ym') . '.log'),
-            'level' => 'debug',
-        ],
-
-        // 推送日志
-        'push_task' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/push_task/' . Date('Ymd') . '.log'),
-            'level' => 'debug',
-        ],
-
-        // 极光标签日志
-        'label_task' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/label_task/' . Date('Ymd') . '.log'),
-            'level' => 'debug',
-        ],
-
-        // 极光标签详细日志
-        'label_detail_task' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/label_detail_task/' . Date('Ymd') . '.log'),
-            'level' => 'debug',
-        ],
-
     ],
 
 ];

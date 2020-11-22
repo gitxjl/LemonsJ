@@ -2,6 +2,15 @@
 
 return [
 
+    'ext' => [
+        '.json',
+        '.jsonp'
+    ],
+
+    'file_type' => [4,5,6,7,8,9,10,11,12],
+    'file_list' => [0=>'富文本',1=>'表格文档',2=>'markdown',3=>'curl',4=>'postman',5=>'swagger',6=>'openApi',7=>'yaml',8=>'har 1.2'],
+    'file_path' => 'file',
+
     /*
     |--------------------------------------------------------------------------
     | Default Filesystem Disk
@@ -64,6 +73,21 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Symbolic Links
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure the symbolic links that will be created when the
+    | `storage:link` Artisan command is executed. The array keys should be
+    | the locations of the links and the values should be their targets.
+    |
+    */
+
+    'links' => [
+        public_path('storage') => storage_path('app/public'),
     ],
 
 ];

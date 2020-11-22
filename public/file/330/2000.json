@@ -1,0 +1,1 @@
+{"name":"\u62a5\u7a0e\u62a5\u7a0e","event":[{"listen":"prerequest","script":{"id":"213eb5ce-70c0-4240-8636-1b98d5bd7ab2","type":"text\/javascript","exec":[""]}},{"listen":"test","script":{"id":"41582bbd-504e-4a36-9bd8-2d50f94456d1","type":"text\/javascript","exec":[""]}}],"protocolProfileBehavior":[],"_postman_isSubFolder":true}

@@ -1,0 +1,467 @@
+{
+  "name": "http:\/\/www.manongjc.com\/article\/17174.html?params001=v_params001&params002=v_params002&params003=v_params003",
+  "request": {
+    "method": "POST",
+    "header": [
+      {
+        "key": "User-Agent",
+        "value": "Mozilla\/5.0 (Windows NT 10.0; WOW64; rv:68.0) Gecko\/20100101 Firefox\/68.0"
+      },
+      {
+        "key": "Accept",
+        "value": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,*\/*;q=0.8"
+      },
+      {
+        "key": "Accept-Language",
+        "value": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      },
+      {
+        "key": "Referer",
+        "value": "https:\/\/www.baidu.com\/link?url=8xJIE5f3NNtYGEP_nYHPGxoA4dChDCFhK0TfSTthVJMgoAFDmeZ3djd5VTBjt_k1GzpCmEKaIO5P-sUUE7hVd_&wd=&eqid=88dd77500011a6bb000000065e874629"
+      },
+      {
+        "key": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "key": "Cookie",
+        "value": "Hm_lvt_94faa21dbcd89dc3dccb1b3e4bb2e254=1585859006,1585861430,1585923636,1585923961; __gads=ID=a5c3da09d19ba051:T=1585568117:S=ALNI_MazoZxkcPAvRePBGP23cydcioFs3Q; __tins__19571051=%7B%22sid%22%3A%201585923635864%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201585925760579%7D; __51cke__=; __51laig__=2; Hm_lpvt_94faa21dbcd89dc3dccb1b3e4bb2e254=1585923961"
+      },
+      {
+        "key": "Upgrade-Insecure-Requests",
+        "value": "1"
+      },
+      {
+        "key": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "key": "Cache-Control",
+        "value": "no-cache"
+      }
+    ],
+    "body": {
+      "mode": "formdata",
+      "formdata": [
+        {
+          "key": "name",
+          "value": "guest2",
+          "type": "text"
+        },
+        {
+          "key": "password",
+          "value": "084e0343a0486ff05530df6c705c8bb4",
+          "type": "text"
+        },
+        {
+          "key": "email",
+          "value": "guest1@guest.com",
+          "type": "text"
+        }
+      ]
+    },
+    "url": {
+      "raw": "http:\/\/www.manongjc.com\/article\/17174.html?params001=v_params001&params002=v_params002&params003=v_params003",
+      "protocol": "http",
+      "host": [
+        "www",
+        "manongjc",
+        "com"
+      ],
+      "path": [
+        "article",
+        "17174.html"
+      ],
+      "query": [
+        {
+          "key": "params001",
+          "value": "v_params001"
+        },
+        {
+          "key": "params002",
+          "value": "v_params002"
+        },
+        {
+          "key": "params003",
+          "value": "v_params003"
+        }
+      ]
+    }
+  },
+  "response": [
+    {
+      "name": "充值记录",
+      "originalRequest": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "type": "text",
+            "value": "Bearer {{token}}",
+            "description": "token"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "description": "Content-Type",
+            "type": "text"
+          },
+          {
+            "key": "TEst",
+            "value": "TEst",
+            "description": "TEst",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "POST1",
+              "value": "POST11",
+              "description": "POST11",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "POST2",
+              "value": "POST2",
+              "description": "POST2",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "local.crmtest.com/api/recharge/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&recharge_way=&type=&status=&from=&to=&agentcode=DL01359&username=良",
+          "host": [
+            "local",
+            "crmtest",
+            "com"
+          ],
+          "path": [
+            "api",
+            "recharge",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "XDEBUG_SESSION_START",
+              "value": "1565744662580"
+            },
+            {
+              "key": "per_page",
+              "value": "10"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "sn",
+              "value": ""
+            },
+            {
+              "key": "recharge_way",
+              "value": ""
+            },
+            {
+              "key": "type",
+              "value": ""
+            },
+            {
+              "key": "status",
+              "value": ""
+            },
+            {
+              "key": "from",
+              "value": ""
+            },
+            {
+              "key": "to",
+              "value": ""
+            },
+            {
+              "key": "agentcode",
+              "value": "DL01359"
+            },
+            {
+              "key": "username",
+              "value": "良"
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "html",
+      "header": [
+        {
+          "key": "Bdpagetype",
+          "value": "1"
+        },
+        {
+          "key": "Bdqid",
+          "value": "0xb56e14b10006307d"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private"
+        },
+        {
+          "key": "Connection",
+          "value": "Keep-Alive"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        },
+        {
+          "key": "Cxy_all",
+          "value": "06074089_18_pg+33c25b382671d43138ed5b85ee0ab538"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 30 Nov 2019 09:52:24 GMT"
+        },
+        {
+          "key": "Expires",
+          "value": "Sat, 30 Nov 2019 09:51:39 GMT"
+        },
+        {
+          "key": "P3p",
+          "value": "CP=\" OTI DSP COR IVA OUR IND COM \""
+        },
+        {
+          "key": "Server",
+          "value": "BWS/1.1"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "BDRCVFR[LyOqhVrki83]=3rYZBLOTDb6nHDvILC8mvqV; path=/; domain=.baidu.com"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "delPer=0; path=/; domain=.baidu.com"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "BDSVRTM=0; path=/"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "BD_HOME=0; path=/"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "H_PS_PSSID=1451_21114; path=/; domain=.baidu.com"
+        },
+        {
+          "key": "Traceid",
+          "value": "1575107544028805991413073409518745301117"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        },
+        {
+          "key": "X-Ua-Compatible",
+          "value": "IE=Edge,chrome=1"
+        },
+        {
+          "key": "Transfer-Encoding",
+          "value": "chunked"
+        }
+      ],
+      "cookie": [],
+      "body": "{\r\n  \"me\": {\r\n    \"name\": \"Luke Skywalker\"\r\n  }\r\n}"
+    },
+    {
+      "name": "充值记录fsdf",
+      "originalRequest": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "type": "text",
+            "value": "Bearer {{token}}",
+            "description": "token"
+          },
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "description": "Content-Type",
+            "type": "text"
+          },
+          {
+            "key": "TEst",
+            "value": "TEst",
+            "description": "TEst",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "POST1",
+              "value": "POST11",
+              "description": "POST11",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "POST2",
+              "value": "POST2",
+              "description": "POST2",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{url}}/api/recharge/list?XDEBUG_SESSION_START=1565744662580&per_page=10&page=1&sn=&recharge_way=&type=&status=&from=&to=",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "recharge",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "XDEBUG_SESSION_START",
+              "value": "1565744662580"
+            },
+            {
+              "key": "per_page",
+              "value": "10"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "sn",
+              "value": ""
+            },
+            {
+              "key": "recharge_way",
+              "value": ""
+            },
+            {
+              "key": "type",
+              "value": ""
+            },
+            {
+              "key": "status",
+              "value": ""
+            },
+            {
+              "key": "from",
+              "value": ""
+            },
+            {
+              "key": "to",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": "html",
+      "header": [
+        {
+          "key": "Bdpagetype",
+          "value": "1"
+        },
+        {
+          "key": "Bdqid",
+          "value": "0xb56e14b10006307d"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private"
+        },
+        {
+          "key": "Connection",
+          "value": "Keep-Alive"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        },
+        {
+          "key": "Cxy_all",
+          "value": "06074089_18_pg+33c25b382671d43138ed5b85ee0ab538"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 30 Nov 2019 09:52:24 GMT"
+        },
+        {
+          "key": "Expires",
+          "value": "Sat, 30 Nov 2019 09:51:39 GMT"
+        },
+        {
+          "key": "P3p",
+          "value": "CP=\" OTI DSP COR IVA OUR IND COM \""
+        },
+        {
+          "key": "Server",
+          "value": "BWS/1.1"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "BDRCVFR[LyOqhVrki83]=3rYZBLOTDb6nHDvILC8mvqV; path=/; domain=.baidu.com"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "delPer=0; path=/; domain=.baidu.com"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "BDSVRTM=0; path=/"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "BD_HOME=0; path=/"
+        },
+        {
+          "key": "Set-Cookie",
+          "value": "H_PS_PSSID=1451_21114; path=/; domain=.baidu.com"
+        },
+        {
+          "key": "Traceid",
+          "value": "1575107544028805991413073409518745301117"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        },
+        {
+          "key": "X-Ua-Compatible",
+          "value": "IE=Edge,chrome=1"
+        },
+        {
+          "key": "Transfer-Encoding",
+          "value": "chunked"
+        }
+      ],
+      "cookie": [],
+      "body": "{\r\n  \"me\": {\r\n    \"name\": \"充值记录fsdf\"\r\n  }\r\n}"
+    }
+  ]
+}

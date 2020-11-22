@@ -1,0 +1,358 @@
+/*navbar start*/
+.navbar{
+    width: 100%;
+    min-height: 50px;
+    position: inherit;
+}
+.navbar .navbar-collapse{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.navbar .navbar-collapse .fa{
+    display: contents;
+}
+
+.navbar .navbar-collapse a{
+    color: #595959;
+    text-decoration: none;;
+}
+
+.navbar .navbar-collapse .navbar-submit{
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    width: 200px;
+    height: 25px;
+}
+.navbar .navbar-collapse .navbar-submit input{
+    background: none;
+    border: 0px;
+    width: 170px;
+    height: 22px;
+    color: #FFF;
+}
+.navbar .navbar-collapse .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.navbar .navbar-nav{
+    float: left;
+}
+.navbar ul{
+    width: auto;
+    padding-bottom: 0px;
+    margin: 15px auto;
+    list-style: none;
+}
+.navbar ul li {
+    width: auto;
+    margin-bottom: 0px;
+    float: left;
+    margin-left: 10px;
+}
+.navbar .navbar-right{
+    float: right;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu{
+    display:none;
+    border-radius: 4px;
+    background: #FFF;
+    position: absolute;
+    min-width: 160px;
+    padding: 5px 0;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    margin-left: -145px;
+    z-index: 999;
+}
+
+.navbar .navbar-nav .dropdown ul{
+    margin-top: 0px;
+
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu a{
+    color: #595959;
+    padding-left: 10px;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu a:hover{
+    border-radius: 0px;color: #ccc;
+    color: #FFF;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu li:hover{
+    color: #FFF;
+    background: #ccc;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu li{
+    line-height: 25px;
+    display: block;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu li.divider{
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+/*navbar end*/
+
+#layout > header, .btns {
+    width: auto;
+}
+
+#side-toolbar{
+    background: #FFF;
+    position: fixed;
+    bottom: 100px;
+    right: 230px;
+    z-index: 100;
+    font-size: 14px;
+}
+#side-toolbar .fa {
+    margin-left: 8px;
+    font-size: 1.4em;
+}
+#side-toolbar a{
+    color: #999;
+    text-decoration: none;
+}
+
+
+#sidebar {
+    width: 300px;
+    /*height: 100%;*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 100;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-right: none;
+    /*border-bottom: none;*/
+}
+
+#sidebar:hover {
+    overflow: auto;
+}
+
+#sidebar h1 {
+    font-size: 16px;
+}
+
+#custom-toc-container {
+    padding-left: 0;
+}
+
+#test-editormd-view, #test-editormd-view2 {
+    /*padding-left: 0;*/
+    /*padding-right: 430px;*/
+    /*margin: 0;*/
+}
+#sidebar-menu a{
+    /*color: #000;*/
+    text-decoration: none;
+}
+#sidebar-menu{
+    color: #000;
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#f5f5fa;
+    /*overflow: scroll;*/
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+}
+#sidebar-menu span.fa{color: #38f}
+#sidebar-menu i.fa{color: #666}
+#sidebar-menu .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+#sidebar-menu .sidebar-top .fa-plus,#sidebar-menu .sidebar-top .fa-folder,#sidebar-menu .sidebar-top .fa-edit,#sidebar-menu .sidebar-top .fa-home{
+    float: left;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 5px;
+}
+
+#sidebar-menu .sidebar-top{
+    padding-left: 45px;
+    width: 100%;
+    min-height: 35px;
+}
+
+#sidebar-menu .sidebar-submit{
+    border-bottom: 2px solid #ccc;
+    /*border-radius: 4px;*/
+    width: 200px;
+    height: 25px;
+    text-indent: 3px;
+    margin: 0 auto 10px auto;
+    float: left;
+}
+#sidebar-menu .fa-plus{
+    cursor: pointer;
+}
+#sidebar-menu .fa-folder{
+    cursor: pointer;
+}
+#sidebar-menu .sidebar-submit .fa-close{
+    display: none;
+    cursor: pointer;
+}
+
+#sidebar-menu .sidebar-submit input{
+    background: none;
+    border: 0px;
+    width: 155px;
+    height: 23px;
+    color: #000;
+    text-indent: 4px;
+}
+#sidebar-menu ul li{width: 100%;margin-left: 0px;line-height: 25px;list-style-type: none;}
+#sidebar-menu ul li a{width: 100%;display: block;padding-left: 50px;cursor: pointer;line-height: 30px;color: #000;padding-right: 10px;}
+#sidebar-menu ul li a:hover{background: #ccc;color: #FFF;}
+#sidebar-menu{}
+#sidebar-menu ul li ul li a{padding-left: 70px;}
+#sidebar-menu ul li ul li ul li a{padding-left: 90px;}
+#sidebar-menu ul li ul li ul li ul li a{padding-left: 110px;}
+#sidebar-menu ul li ul li ul li ul li ul li a{padding-left: 130px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li a{padding-left: 150px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li ul li a{padding-left: 160px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li ul li ul li a{padding-left: 170px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li ul li ul li ul li a{padding-left: 170px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li a{padding-left: 170px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li a{padding-left: 170px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li a{padding-left: 170px;}
+#sidebar-menu ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li ul li a{padding-left: 170px;}
+#sidebar-menu ul li ul{display: none;}
+
+
+#api-doc-content{
+    width: 65%;
+    padding-left: 20px;
+    margin-left: 330px;
+}
+
+#api-doc-content .adc-operation{height: 50px;}
+
+.editormd-preview-container p code, .editormd-html-preview p code {
+    color: #2196F3;
+    border: 0px;
+}
+
+
+/*#nav-tabs{width: 70%;margin: 20px auto;}*/
+#nav-tabs ul{
+    list-style: none;overflow: hidden;
+}
+#nav-tabs #nav{
+    width: 400px;height: 40px;text-align: center;line-height: 40px;
+    background: #c5c5c5;
+}
+#nav-tabs #nav li{
+    width: 25%;height: 40px;float: left;border: 1px solid #c5c5c5;
+    border-bottom: none;
+}
+#nav-tabs #nav li.active{
+    background: #fff;
+}
+#nav-tabs #content{
+    width: 400px;height: 300px;position: relative;border: 1px solid #c5c5c5;border-top: none;
+}
+#nav-tabs #content li{width: 100%;height: 100%;position: absolute;padding: 10px;display: none}
+
+
+#tabs{
+    width:600px;
+    height:250px;
+    background:white;
+    margin:20px;
+}
+#tabs ul{
+    float:left;
+    margin:20px 0 0 20px;
+    padding:0;
+}
+#tabs li{
+    width:80px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-bottom:1px solid grey;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    background:#eeeeee;
+    position:relative;
+    top:1px;
+}
+#tabs li:hover{
+    color:#aaaaaa;
+    cursor:pointer;
+}
+.items{
+    width:560px;
+    height:175px;
+    font-size:16px;
+    text-align:center;
+    border:1px solid grey;
+    float:left;
+    margin-left:20px;
+}
+
+.editormd-html-preview{padding-bottom: 100px}
+.editormd-html-preview h3{margin-top: 40px;margin-bottom: 10px;}
+.editormd-html-preview h4{text-indent: 10px}
+.editormd-html-preview h5{text-indent: 20px;margin-bottom: 5px;}
+
+.markdown-body ul, .markdown-body ol {
+    padding-left: 0em;
+    list-style-type: none;
+}
+.markdown-body ul, .markdown-body ol {
+    padding-left: 1em;
+}
+/*.markdown-body table tr td:first-child ,.markdown-body table tr th:first-child {*/
+/*    width: 150px;*/
+/*}*/
+
+/*.markdown-body table tr td:nth-child(2) ,.markdown-body table tr th:nth-child(2) {*/
+/*    min-width: 80px;*/
+/*}*/
+
+/*.markdown-body table tr td:nth-child(3) ,.markdown-body table tr th:nth-child(3) {*/
+/*    min-width: 80px;*/
+/*}*/
+/*.markdown-body table tr td:nth-child(4) ,.markdown-body table tr th:nth-child(4) {*/
+/*    min-width: 180px;*/
+/*}*/
+
+#sidebar-menu nav{
+    height: 100%;
+    overflow: auto;
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+}
+
+@media (max-width: 1500px) {
+    #sidebar{display: none; }
+    #side-toolbar{right: 20px;}
+}

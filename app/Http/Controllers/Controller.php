@@ -11,43 +11,15 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    //成功返回
-    public function successMock($data){
-        $this->parseNull($data);
-        return response()->json($data,200);
+    public static $uid = '';
+
+    public function __construct()
+    {
+        !self::$uid && self::$uid = app('auth')->id();
     }
 
-    //成功返回
-    public function success($data,$msg="ok"){
-        $this->parseNull($data);
-        $result = [
-            "code"=>0,
-            "msg"=>$msg,
-            "data"=>$data,
-        ];
-        return response()->json($result,200);
-    }
-
-    //失败返回
-    public function error($code="422",$data="",$msg="fail"){
-        $result = [
-            "code"=>$code,
-            "msg"=>$msg,
-            "data"=>$data
-        ];
-        return response()->json($result,200);
-    }
-
-    //如果返回的数据中有 null 则那其值修改为空 （安卓和IOS 对null型的数据不友好，会报错）
-    private function parseNull(&$data){
-        if(is_array($data)){
-            foreach($data as &$v){
-                $this->parseNull($v);
-            }
-        }else{
-            if(is_null($data)){
-                $data = "";
-            }
-        }
+    public static function uid(){
+        !self::$uid && self::$uid = app('auth')->id();
+        return self::$uid;
     }
 }

@@ -1,5 +1,0 @@
-{
-  "me": {
-    "name": "Luke Skywalker"
-  }
-}

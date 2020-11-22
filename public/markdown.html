@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Markdown</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icon/icon.css">
+    <link rel="stylesheet" href="assets/css/markdown.css">
+    <link rel="stylesheet" href="editormd/css/editormd.css">
+</head>
+<body>
+
+<form id="doc-create" method="POST" action="" enctype="multipart/form-data">
+    <input name="id" type="hidden" value="">
+    <input name="iid" type="hidden" value="">
+    <input name="type" type="hidden" value="2">
+    <input class="tdl" name="tdl" type="hidden" value="0">
+    <div class="row">
+        <div><input type="text" name="name" class="name" placeholder="文档名称"></div>
+        <div>
+            <div class="combobox form-pid">
+                <div class="input-box">
+                    <div class="title">所属目录：</div>
+                    <div class="value">一级目录</div>
+                    <i class="bi bi-down"></i>
+                    <input class="combobox-input" name="pid" type="hidden" value="0">
+                </div>
+                <div class="combobox-box">
+                    <div class="search-box">
+                        <input type="text" class="search" value="" placeholder="搜索 / Search"/>
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-x"></i>
+                        <i class="bi bi-up-downs"></i>
+                        <i class="bi bi-catalogs-plus"></i>
+                    </div>
+                    <div class="combobox-menu">
+                        <div class="combobox-dl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="combobox form-tdl">
+                <div class="input-box">
+                    <div class="title">模板：</div>
+                    <div class="value">暂无选择</div>
+                    <i class="bi bi-down"></i>
+                    <input class="combobox-input" name="copy" type="hidden" value="0">
+                </div>
+                <div class="combobox-box">
+                    <div class="search-box">
+                        <input type="text" class="search" value="" placeholder="搜索 / Search"/>
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-x"></i>
+                        <i class="bi bi-list" title="模板管理"></i>
+                    </div>
+                    <div class="combobox-menu">
+                        <div class="combobox-dl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="input-box counter">
+                <div class="title">排序：</div>
+                <i class="bi bi-dash"></i>
+                <input class="numeric sort" type="text" name="sort" value="0">
+                <i class="bi bi-plus"></i>
+            </div>
+        </div>
+        <div>
+            <div class="button-option">
+                <button class="button" type="submit">保存</button>
+                <div class="option">
+                    <span class="caret"></span>
+                    <ul>
+                        <li class="is_tdl">另存为模板</li>
+                        <li class="fun" c="1">复制文档</li>
+                        <li class="fun" c="2">删除</li>
+                        <li class="fun" c="3">分享连接</li>
+                        <li class="fun" c="4">新窗口打开</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="editormd"></div>
+</form>
+<textarea class="view-textarea" style="display: none;">
+</textarea>
+<script src="assets/js/jquery-3.5.0.min.js"></script>
+<script src="editormd/editormd.js"></script>
+<script src="assets/js/common.js"></script>
+<script type="text/javascript">
+    function viewInit(){
+        $('.editormd-preview').height() == 0 && init_editormd($('.view-textarea').val());
+    }
+</script>
+
+<script type="text/javascript">
+    var TEditor;
+    init_editormd('');
+    function markdownSetValue(d) {
+        init_editormd(d);
+    }
+
+    function setTdlPath(_i) {
+        if (!isNaN(_i) && _i > 0) {
+            file = '/doc/tpl/' + _i
+        } else {
+            file = _i
+        }
+        if (file.length > 0) {
+            $.get(file, function (md) {
+                TEditor.setValue(md);
+            });
+        } else {
+            TEditor.clear();
+        }
+    }
+
+    function setEditorMD(file) {
+        if (!file) {
+            TEditor.clear();
+        } else {
+            $.get(file, function (md) {
+                init_editormd(md);
+            });
+        }
+    }
+
+    // alert(wh-rd)
+    $(window).resize(function () {
+        var h = $(document).outerHeight(true), d = $(".row").outerHeight(true);
+        $('#editormd').css('height', h - d - 25 + 'px');
+    });
+
+    function init_editormd(md) {
+        var h = $(document).outerHeight(true), d = $(".row").outerHeight(true);
+        TEditor = editormd("editormd", {
+            width: "92%",
+            height: parseInt(h - d - 25),
+            path: '/editormd/lib/',
+            theme: "default",
+            previewTheme: "default",
+            editorTheme: "default",
+            markdown: md,
+            codeFold: true,
+            saveHTMLToTextarea: true,    // 保存 HTML 到 Textarea
+            searchReplace: true,
+            htmlDecode: "style,script,iframe|on*",            // 开启 HTML 标签解析，为了安全性，默认不开启
+            emoji: true,
+            taskList: true,
+            tocm: true,         // Using [TOCM]
+            tex: true,                   // 开启科学公式TeX语言支持，默认关闭
+            flowChart: true,             // 开启流程图支持，默认关闭
+            sequenceDiagram: true,       // 开启时序/序列图支持，默认关闭,
+        });
+    }
+</script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>

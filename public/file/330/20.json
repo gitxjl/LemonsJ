@@ -1,0 +1,1 @@
+{"name":"\u8d22\u52a1","event":[{"listen":"prerequest","script":{"id":"e0f99cb3-b957-4785-90dd-244b1d84712f","type":"text\/javascript","exec":[""]}},{"listen":"test","script":{"id":"827bde6c-a0e3-40be-987d-e6621cb6c717","type":"text\/javascript","exec":[""]}}],"protocolProfileBehavior":[],"_postman_isSubFolder":true}

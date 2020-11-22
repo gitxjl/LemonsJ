@@ -1,0 +1,57 @@
+.doc-head-row{
+    width: 95%;
+    margin: 30px auto 10px auto;
+}
+
+.doc-head-row .col-md-4,.doc-head-row .col-md-3{
+    padding-left: 0px;
+    padding-right: 25px;
+}
+
+.doc-head-row .markdown-input,.doc-head-row .markdown-input-text{
+    width: 100%;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 1px;
+}
+.markdown-input-text{
+    height: 30px;
+    line-height: 30px;
+    text-indent: 5px;
+}
+
+.markdown-header{
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.markdown-header input{
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .doc-head-row .row-fun .btn-group{
+        float: right;
+    }
+    .doc-head-row .col-md-4, .doc-head-row .col-md-3 {
+        padding-right: 0px;
+    }
+    .doc-input-number .title {
+        display: none;
+    }
+    .doc-head-row .row .col-md-3 {
+        min-height: 40px;
+        padding-right: 0px !important;
+    }
+    .doc-row .col-md-12 {
+        min-height: 40px !important;
+        margin-top: 0px !important;
+    }
+    .doc-row .intro {
+        height: 40px !important;
+    }
+
+}

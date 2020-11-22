@@ -1,0 +1,113 @@
+.note-editor{
+    width: 92%;
+    height: 80%;
+    margin: 0 auto;
+}
+.note-editor .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+.note-editor .dropdown-toggle:empty::after {
+    margin-left: 1px;
+}
+.note-editor .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.note-editor .dropdown-item:hover, .dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+.note-editor .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+}
+
+.note-editor .dropdown-item.disabled, .dropdown-item:disabled {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: transparent;
+}
+.note-editor .modal-body {
+    width: 100%;
+}
+.note-editor .modal-title {
+    display: contents;
+}
+.note-editor .modal-footer {
+    margin-top: 0px;
+}
+.note-editor pre {
+    padding-left: 40px;
+}
+.note-editor table {
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.note-editor table td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+.note-editor table th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+.note-editing-area{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.note-editor ul {
+    list-style-type: disc;
+}
+.note-editor ol {
+    list-style-type: decimal;
+}
+.note-editor.note-frame, .note-editor.note-airframe {
+    border: 0px solid #ddd;
+}
+.note-popover .popover-content, .note-toolbar {
+    margin: 0;
+    padding: 0 0 1px 0px;
+}
+.note-toolbar .note-btn:hover {
+    border: 1px solid #ccc0;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable, .note-editor.note-airframe .note-editing-area .note-editable {
+    padding: 10px 10px 10px 15px;
+}
+.btn-light {
+}
+.note-toolbar .note-btn {
+}
+.note-modal .form-group .form-control{width: 92%}

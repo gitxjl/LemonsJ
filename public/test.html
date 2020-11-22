@@ -1,0 +1,194 @@
+<html>
+<style>
+    dl {
+        border-left: 1px solid #389f;
+    }
+    dl dd {
+        margin-left: 20px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    dl dd:hover>bg {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    dl dd i.fa-angle-down {
+        margin-left: -4px;
+    }
+    .combobox-l>dl {
+        border: 0px;
+    }
+    .combobox-l>dl:first-of-type>dd {
+        margin-left: 0px;
+    }
+    dl dd.active>bg {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    dl dd bg {
+        background: #f7f7f7;
+        box-sizing: border-box;
+        border-left: 2px solid #2196F3;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+
+    .combobox {
+        /*width: 500px;*/
+        /*height: 40px;*/
+    }
+    .combobox-t {
+        display: flex;
+    }
+    .combobox-t .title,.combobox-t .value,.combobox-t .icon {
+        display: table-cell;
+    }
+    .combobox-t .value {
+        width: 100%;
+        overflow: hidden;
+        word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;
+    }
+    .combobox-s {
+        display: flex;
+        width: 100%;
+        z-index: 1;
+        background: #fff;
+        position: relative;
+        top: -280px;
+        border-bottom: 1px solid #ccc;
+    }
+    .combobox-s .search{
+        display: table-cell;
+        width: 100%;
+        border: 0px;
+    }
+    .combobox-l {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        /*margin-top: 20px;*/
+    }
+    .combobox-dl {
+        width: 100.4%;
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: relative;
+        /*margin-top: -18px;*/
+        padding-top: 5px;
+    }
+</style>
+<body>
+<div class="combobox">
+    <div class="combobox-t">
+        <div class="title">66666666:</div>
+        <div class="value">7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777</div>
+        <i class="icon i-search">^</i>
+    </div>
+    <div class="combobox-l">
+        <div class="combobox-dl">
+            <dl>
+                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>1111网址为www.divcss5.com</dd>
+                <dd class="active"><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>2222网址为www.divcss5.com</dd>
+                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>333    网址为www.divcss5.com
+                    <dl>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com
+                            <dl>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com
+                                    <dl>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com
+                                            <dl>
+                                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                            </dl>
+                                        </dd>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                    </dl>
+                                </dd>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                            </dl>
+                        </dd>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                    </dl>
+                </dd>
+                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="combobox-s">
+        <input type="text" class="search" value="" placeholder="搜索 / Search"/>
+        <i class="icon i-search">?</i>
+    </div>
+</div>
+<!--<div class="lssss"><div class="lssss"></div><div class="lssss"></div><div class="lssss"></div><div class="lssss"></div></div>  class="active"-->
+<h1>一个定义列表：</h1>
+<div class="combobox-l">
+    <dl>
+        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>11111网址为www.divcss5.com</dd>
+        <dd class="active"><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>2222网址为www.divcss5.com</dd>
+        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>333网址为www.divcss5.com
+            <dl>
+                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com
+                    <dl>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com
+                            <dl>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com
+                                    <dl>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                                    </dl>
+                                </dd>
+                                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                            </dl>
+                        </dd>
+                        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                    </dl>
+                </dd>
+                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+                <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+            </dl>
+        </dd>
+        <dd><bg></bg><i class="fa-angle-down">-</i><i class="i-postman">P</i>网址为www.divcss5.com</dd>
+    </dl>
+</div>
+<dl>
+    <dt>css网站</dt>
+    <dd>网址为www.divcss5.com</dd>
+    <dt>div css网站</dt>
+    <dd>网址为www.divcss5.com</dd>
+    <dt>div+css网站</dt>
+    <dd>网址为www.divcss5.com
+        <dl>
+            <dt>css网站</dt>
+            <dd>网址为www.divcss5.com</dd>
+            <dt>div css网站</dt>
+            <dd>网址为www.divcss5.com</dd>
+            <dt>div+css网站</dt>
+            <dd>网址为www.divcss5.com</dd>
+        </dl>
+    </dd>
+</dl>
+</body>
+</html>
