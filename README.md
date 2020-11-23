@@ -1,7 +1,27 @@
 # LemonsJ
 LemonsJ（柠檬J）- API接口文档工具，支持Postman、Swagger上传</p>
 
-## 功能图例：
+## 环境依赖
+- laravel 7.0
+- php 7.2.10
+
+## 安装
+- 参照 Laravel框架 安装
+- 根目录 lemonsj.sql
+
+## 功能介绍
+- 可编辑文档类型：表格文档、markdown文档、富文本（html）、curl文本
+- 文件文档类型（可导入）：PostMan、Swagger 等json文件格式
+- 简单的用户登录管理，分为：创建者、管理者、阅读者
+- 项目管理
+- 成员管理
+- 鼠标右键菜单列表
+- 编辑/浏览模式切换
+- ... 功能有待完善
+ 
+欢迎使用反馈！
+
+## 功能图例
 <center>
 <center>新增功能-列表</center>
 <img alt="" height="475" src="https://oscimg.oschina.net/oscnet/up-4e60bf94cb7ca44ab483f2f1d8a16ad2e29.JPEG" width="661" /><br>
