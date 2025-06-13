@@ -1,1 +1,0 @@
-{"name":"\u64cd\u4f5c\u8bb0\u5f55","event":[{"listen":"prerequest","script":{"id":"2c410313-f30b-4047-b9a8-a0255c00ff4f","type":"text\/javascript","exec":[""]}},{"listen":"test","script":{"id":"f220eb20-898f-4e12-92a9-03eef2b9798c","type":"text\/javascript","exec":[""]}}],"protocolProfileBehavior":[]}
